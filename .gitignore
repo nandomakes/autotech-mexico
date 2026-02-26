@@ -1,0 +1,13 @@
+# Archivos sensibles - NO publicar
+scraper.py
+inventario.js
+inventario.json
+
+# Configuracion local
+.claude/
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log

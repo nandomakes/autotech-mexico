@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO — Se actualiza dinámicamente con JS -->
+  <title>Producto — Autotech México</title>
+  <meta name="description" content="Detalle del producto industrial. Autotech México - Distribuidores de maquinaria CNC y PLCs.">
+  <meta property="og:title" content="Producto — Autotech México">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS — Animaciones en scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+  ============================================================ -->
+  <a
+    href="https://wa.me/19562394080?text=Hola%2C%20me%20interesa%20cotizar%20un%20producto.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F"
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    id="whatsapp-btn"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        AUTOTECH
+        <span class="logo-sub">México</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="index.html#por-que" class="nav-link">¿Por qué nosotros?</a></li>
+        <li><a href="index.html#marcas" class="nav-link">Marcas</a></li>
+        <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="index.html#cotizacion" class="btn btn-primary nav-cta">Solicitar Cotización</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CONTENIDO DEL PRODUCTO
+  ============================================================ -->
+  <main class="producto-page">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Navegación" id="breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="index.html#catalogo">Catálogo</a>
+        <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="#" id="breadcrumb-categoria">Categoría</a>
+        <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="breadcrumb-actual" id="breadcrumb-producto">Producto</span>
+      </nav>
+
+      <!-- Botón volver -->
+      <a href="#" class="btn-volver" id="btn-volver">
+        <i class="fa-solid fa-arrow-left"></i> Volver a <span id="volver-categoria">categoría</span>
+      </a>
+
+      <!-- Layout principal del producto -->
+      <div class="producto-detalle" id="producto-detalle">
+
+        <!-- Skeleton loader mientras carga -->
+        <div class="producto-galeria">
+          <div class="sk-imagen"></div>
+        </div>
+        <div class="producto-info-detalle">
+          <div class="sk-line sk-line-lg"></div>
+          <div class="sk-line sk-line-md"></div>
+          <div class="sk-line sk-line-sm"></div>
+          <div class="sk-line sk-line-xl"></div>
+        </div>
+
+      </div>
+
+      <!-- Error / Producto no encontrado -->
+      <div class="producto-error" id="producto-error" hidden>
+        <i class="fa-solid fa-box-open"></i>
+        <h2>Producto no encontrado</h2>
+        <p>El producto que buscas no existe o ya no está disponible.</p>
+        <a href="index.html#catalogo" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-left"></i> Volver al catálogo
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            AUTOTECH
+            <span class="logo-sub">México</span>
+          </a>
+          <p class="footer-tagline">Distribuidores de maquinaria CNC y PLCs industriales con presencia en toda la República Mexicana.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="categoria-cnc.html">Máquinas CNC</a></li>
+            <li><a href="categoria-plc.html">PLCs y Control</a></li>
+            <li><a href="categoria-refacciones.html">Refacciones</a></li>
+            <li><a href="categoria-accesorios.html">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html#por-que">¿Por qué nosotros?</a></li>
+            <li><a href="index.html#marcas">Marcas</a></li>
+            <li><a href="index.html#nosotros">Nuestra trayectoria</a></li>
+            <li><a href="index.html#cotizacion">Solicitar cotización</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contacto">
+          <h4>Contacto</h4>
+          <p><i class="fa-solid fa-phone"></i> +52 (55) 0000-0000</p>
+          <p><i class="fa-brands fa-whatsapp"></i> +52 (55) 0000-0000</p>
+          <p><i class="fa-solid fa-envelope"></i> ventas@autotechmexico.mx</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="anio"></span> Autotech México. Todos los derechos reservados.</p>
+        <p class="footer-envio">
+          <i class="fa-solid fa-truck"></i> Enviamos a toda la República Mexicana
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Inventario -->
+  <script src="inventario.js"></script>
+  <!-- Lógica de producto -->
+  <script src="js/producto.js"></script>
+
+</body>
+</html>

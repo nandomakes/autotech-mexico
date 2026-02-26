@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO en español para México -->
+  <title>Autotech México — Maquinaria CNC y PLCs para tu Planta Industrial</title>
+  <meta name="description" content="Venta de maquinaria CNC y PLCs industriales en México. Fanuc, Siemens, Allen-Bradley, Mitsubishi. Envío a toda la República. Soporte técnico incluido. Solicita tu cotización.">
+  <meta name="keywords" content="maquinaria CNC México, PLCs industriales, Fanuc México, Siemens PLC, Allen-Bradley, comprar CNC, maquinaria industrial">
+  <meta name="author" content="Autotech México">
+  <meta property="og:title" content="Autotech México — Maquinaria CNC y PLCs Industriales">
+  <meta property="og:description" content="Venta de maquinaria industrial CNC y PLCs con envío a toda la República Mexicana.">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS — Animaciones en scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       CONFIGURACIÓN: Reemplaza el número +521234567890 con tu
+       número de WhatsApp Business con lada de México (+52).
+  ============================================================ -->
+  <a
+    href="https://wa.me/19562394080?text=Hola%2C%20me%20interesa%20cotizar%20una%20m%C3%A1quina%20CNC.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F"
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo">
+        AUTOTECH
+        <span class="logo-sub">México</span>
+      </a>
+
+      <!-- Hamburger (móvil) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Links de navegación -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="#por-que" class="nav-link">¿Por qué nosotros?</a></li>
+        <li><a href="#marcas" class="nav-link">Marcas</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#cotizacion" class="btn btn-primary nav-cta">Solicitar Cotización</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — SECCIÓN PRINCIPAL
+  ============================================================ -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-circuit" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Badge de confianza -->
+      <div class="hero-badge" data-aos="fade-down">
+        <i class="fa-solid fa-shield-check"></i>
+        Distribuidores Autorizados · Garantía en todos los equipos
+      </div>
+
+      <!-- Titular principal -->
+      <h1 data-aos="fade-up" data-aos-delay="100">
+        Maquinaria Industrial<br>
+        <span class="accent">CNC y PLCs</span> para tu Planta
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">
+        Equipos de las mejores marcas mundiales con envío a toda la
+        <strong>República Mexicana</strong>. Soporte técnico especializado,
+        garantía incluida y financiamiento disponible.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+        <a href="#catalogo" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-box-open"></i> Ver Catálogo
+        </a>
+        <a href="#cotizacion" class="btn btn-ghost btn-lg">
+          <i class="fa-solid fa-file-invoice"></i> Solicitar Cotización
+        </a>
+      </div>
+
+      <!-- Chips de garantías -->
+      <div class="hero-chips" data-aos="fade-up" data-aos-delay="400">
+        <span><i class="fa-solid fa-truck"></i> Envío a toda la República</span>
+        <span><i class="fa-solid fa-certificate"></i> Garantía oficial</span>
+        <span><i class="fa-solid fa-headset"></i> Soporte técnico 24/7</span>
+        <span><i class="fa-solid fa-hand-holding-dollar"></i> Financiamiento disponible</span>
+      </div>
+    </div>
+
+    <!-- ── Logo Loop — banda de marcas animada al fondo del hero ── -->
+    <div class="hero-logo-band" data-aos="fade-up" data-aos-delay="500">
+      <p class="hero-logo-band__label">Marcas que distribuimos</p>
+      <!--
+        LogoLoop: animación física basada en velocidad con suavizado exponencial.
+        Instanciado en js/main.js — clase LogoLoop (adaptación vanilla de la
+        referencia React con ResizeObserver, detección de imágenes y pausa en hover).
+      -->
+      <div id="hero-logo-loop" class="logoloop logoloop--fade" aria-label="Marcas que distribuimos" role="region"></div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       CATÁLOGO DE PRODUCTOS
+  ============================================================ -->
+  <section id="catalogo">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Catálogo</span>
+        <h2>Equipos Disponibles para <span class="accent">Entrega Inmediata</span></h2>
+        <p>Maquinaria industrial de primer nivel con respaldo técnico. Todos los equipos cuentan con garantía y servicio postventa en México.</p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════════
+           CATEGORÍAS DE PRODUCTOS
+           Cada categoría enlaza a su página de listado
+      ══════════════════════════════════════════════════════════ -->
+      <div class="categorias-grid" data-aos="fade-up">
+
+        <a href="categoria-cnc.html" class="categoria-card">
+          <div class="categoria-icon">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3>Máquinas CNC</h3>
+          <p>Centros de mecanizado, tornos y routers CNC de marcas líderes como Fanuc, Mazak y Okuma.</p>
+          <span class="categoria-count" data-cat="cnc">— equipos</span>
+          <span class="categoria-cta">Ver equipos <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="categoria-plc.html" class="categoria-card">
+          <div class="categoria-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>PLCs y Control</h3>
+          <p>Controladores lógicos programables, servo drives y módulos de control industrial.</p>
+          <span class="categoria-count" data-cat="plc">— equipos</span>
+          <span class="categoria-cta">Ver equipos <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="categoria-refacciones.html" class="categoria-card">
+          <div class="categoria-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3>Refacciones</h3>
+          <p>Motores, fuentes de poder, spindle drives y componentes de reemplazo originales.</p>
+          <span class="categoria-count" data-cat="refacciones">— equipos</span>
+          <span class="categoria-cta">Ver equipos <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="categoria-accesorios.html" class="categoria-card">
+          <div class="categoria-icon">
+            <i class="fa-solid fa-plug"></i>
+          </div>
+          <h3>Accesorios</h3>
+          <p>HMIs, convertidores, cables y accesorios complementarios para tu maquinaria.</p>
+          <span class="categoria-count" data-cat="accesorios">— equipos</span>
+          <span class="categoria-cta">Ver equipos <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ¿POR QUÉ COMPRARNOS?
+  ============================================================ -->
+  <section id="por-que">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Nuestra Diferencia</span>
+        <h2>¿Por qué comprar con <span class="accent">Autotech México</span>?</h2>
+        <p>Más que vender maquinaria, te acompañamos en toda la vida útil de tu equipo.</p>
+      </div>
+
+      <div class="beneficios-grid">
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="beneficio-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Soporte Técnico Incluido</h3>
+          <p>Cada equipo viene con soporte técnico especializado en tu idioma. Nuestros ingenieros están disponibles para instalación, puesta en marcha y capacitación.</p>
+        </div>
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="beneficio-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>Envío a Toda la República</h3>
+          <p>Entregamos en los 32 estados de México. Coordinamos el flete, aduana y logística para que tu equipo llegue sin complicaciones a tu planta.</p>
+        </div>
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="beneficio-icon">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3>Garantía en Todos los Equipos</h3>
+          <p>Garantía oficial del fabricante en todos nuestros productos. Reparaciones y reemplazos sin letra chica. Tu inversión está protegida.</p>
+        </div>
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="beneficio-icon">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3>Financiamiento Disponible</h3>
+          <p>Esquemas de pago flexibles en pesos mexicanos. Crédito directo, arrendamiento financiero o planes de pago a meses. Consulta con nuestro equipo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARCAS QUE MANEJAMOS
+  ============================================================ -->
+  <section id="marcas">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Distribuidores</span>
+        <h2>Marcas que <span class="accent">Manejamos</span></h2>
+        <p>Trabajamos con los fabricantes líderes a nivel mundial en automatización y maquinaria industrial.</p>
+      </div>
+
+      <div class="marcas-grid" data-aos="fade-up">
+
+        <div class="marca-item">
+          <img src="logos/fanuc.png" alt="Fanuc">
+          <span>Fanuc</span>
+        </div>
+        <div class="marca-item">
+          <img src="logos/siemens.png" alt="Siemens">
+          <span>Siemens</span>
+        </div>
+        <div class="marca-item">
+          <img src="logos/mitsubishi.png" alt="Mitsubishi">
+          <span>Mitsubishi</span>
+        </div>
+        <div class="marca-item">
+          <img src="logos/Allen_Bradley_Logo.png" alt="Allen-Bradley">
+          <span>Allen-Bradley</span>
+        </div>
+        <div class="marca-item marca-texto">
+          <div class="marca-texto-logo">YASKAWA</div>
+          <span>Yaskawa</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN DE CONFIANZA — CONTADORES
+  ============================================================ -->
+  <section id="nosotros">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Nuestra Trayectoria</span>
+        <h2>Números que nos <span class="accent">Respaldan</span></h2>
+        <p>Años de experiencia entregando soluciones industriales de calidad a plantas en toda México.</p>
+      </div>
+
+      <div class="stats-grid">
+
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat-icon"><i class="fa-solid fa-gear"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="850">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Máquinas Vendidas</div>
+          <p class="stat-desc">Equipos CNC y PLCs entregados y funcionando en plantas de todo el país.</p>
+        </div>
+
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-suffix">+ Años</span>
+          </div>
+          <div class="stat-label">de Experiencia</div>
+          <p class="stat-desc">Más de una década especializados en maquinaria industrial para el mercado mexicano.</p>
+        </div>
+
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-icon"><i class="fa-solid fa-industry"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="320">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Clientes Satisfechos</div>
+          <p class="stat-desc">Plantas automotrices, aeroespaciales, alimentarias y de manufactura general.</p>
+        </div>
+
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="32">0</span>
+            <span class="stat-suffix"></span>
+          </div>
+          <div class="stat-label">Estados Atendidos</div>
+          <p class="stat-desc">Presencia en los 32 estados de la República Mexicana. ¡Tu estado incluido!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FORMULARIO DE COTIZACIÓN
+  ============================================================ -->
+  <section id="cotizacion">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Cotización sin Costo</span>
+        <h2>Solicita tu <span class="accent">Cotización Ahora</span></h2>
+        <p>Llena el formulario y un asesor especializado te contactará en menos de 2 horas hábiles con precios, disponibilidad y opciones de financiamiento.</p>
+      </div>
+
+      <div class="cotizacion-layout">
+
+        <!-- Info de contacto -->
+        <div class="cotizacion-info" data-aos="fade-right">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+1 (956) 239-4080</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+1 (956) 239-4080</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Correo</strong>
+              <span>service@autotechindustrialsolutions.com</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lun–Vie: 8am – 6pm<br>Sáb: 9am – 2pm (CST)</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Dirección</strong>
+              <span>Av. Industrial 4500, Parque Industrial<br>Monterrey, N.L. C.P. 64000</span>
+            </div>
+          </div>
+
+          <!-- Mapa placeholder -->
+          <!--
+            CONFIGURACIÓN GOOGLE MAPS:
+            1. Abre Google Maps y busca tu dirección
+            2. Clic en Compartir → Insertar un mapa → Copiar HTML
+            3. Reemplaza este div con el <iframe> de Google Maps
+          -->
+          <div class="map-placeholder">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Google Maps</p>
+            <small>Reemplaza este bloque con tu iframe de Google Maps</small>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <!--
+          CONFIGURACIÓN FORMSPREE:
+          ─────────────────────────────────────────────────────────
+          1. Ve a https://formspree.io y crea una cuenta gratuita
+          2. Crea un nuevo formulario con el nombre "Cotizaciones México"
+          3. Copia tu ID único (ejemplo: xpzgkwrb)
+          4. Reemplaza "TU_ID_FORMSPREE" en el action de abajo:
+               action="https://formspree.io/f/xyzgkpwa"
+          5. Formspree enviará cada cotización a tu correo registrado
+          ─────────────────────────────────────────────────────────
+        -->
+        <form
+          id="cotizacion-form"
+          action="https://formspree.io/f/xyzgkpwa"
+          method="POST"
+          data-aos="fade-left"
+          novalidate
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo <span class="req">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ing. Juan Pérez" required>
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa <span class="req">*</span></label>
+              <input type="text" id="empresa" name="empresa" placeholder="Industrias del Norte S.A. de C.V." required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefono">Teléfono <span class="req">*</span></label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+1 (956) 239-4080" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan@empresa.com.mx" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="estado">Estado de la República <span class="req">*</span></label>
+              <select id="estado" name="estado" required>
+                <option value="" disabled selected>Selecciona tu estado…</option>
+                <option>Aguascalientes</option>
+                <option>Baja California</option>
+                <option>Baja California Sur</option>
+                <option>Campeche</option>
+                <option>Chiapas</option>
+                <option>Chihuahua</option>
+                <option>Ciudad de México</option>
+                <option>Coahuila de Zaragoza</option>
+                <option>Colima</option>
+                <option>Durango</option>
+                <option>Guanajuato</option>
+                <option>Guerrero</option>
+                <option>Hidalgo</option>
+                <option>Jalisco</option>
+                <option>Estado de México</option>
+                <option>Michoacán de Ocampo</option>
+                <option>Morelos</option>
+                <option>Nayarit</option>
+                <option>Nuevo León</option>
+                <option>Oaxaca</option>
+                <option>Puebla</option>
+                <option>Querétaro</option>
+                <option>Quintana Roo</option>
+                <option>San Luis Potosí</option>
+                <option>Sinaloa</option>
+                <option>Sonora</option>
+                <option>Tabasco</option>
+                <option>Tamaulipas</option>
+                <option>Tlaxcala</option>
+                <option>Veracruz de Ignacio de la Llave</option>
+                <option>Yucatán</option>
+                <option>Zacatecas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cantidad">Cantidad de equipos</label>
+              <input type="number" id="cantidad" name="cantidad" placeholder="1" min="1">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="producto">Producto de interés <span class="req">*</span></label>
+            <select id="producto" name="producto" required>
+              <option value="" disabled selected>Selecciona un producto…</option>
+              <optgroup label="Máquinas CNC">
+                <option>Centro de Mecanizado Vertical (Fanuc)</option>
+                <option>Torno CNC SINUMERIK (Siemens)</option>
+                <option>Centro de Mecanizado Horizontal (Mitsubishi)</option>
+                <option>Router CNC 5 Ejes (Allen-Bradley)</option>
+              </optgroup>
+              <optgroup label="PLCs">
+                <option>ControlLogix 5580 (Allen-Bradley)</option>
+                <option>SIMATIC S7-1500 (Siemens)</option>
+                <option>MELSEC iQ-R (Mitsubishi)</option>
+                <option>PMC Series 0i-F (Fanuc)</option>
+              </optgroup>
+              <optgroup label="Refacciones">
+                <option>Servo Motor αiS (Fanuc)</option>
+                <option>Módulo E/S 1734-IB8 (Allen-Bradley)</option>
+              </optgroup>
+              <optgroup label="Accesorios">
+                <option>HMI SIMATIC TP900 (Siemens)</option>
+                <option>Convertidor GA800 (Yaskawa)</option>
+              </optgroup>
+              <option>Otro equipo (especificar en mensaje)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje o detalles adicionales</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Describe el uso específico, materiales a maquinar, volumen de producción u otras especificaciones técnicas…"
+            ></textarea>
+          </div>
+
+          <!-- Campos ocultos para Formspree -->
+          <input type="hidden" name="_subject" value="Nueva Cotización — Autotech México">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <button type="submit" class="btn btn-primary btn-block btn-submit" id="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud de Cotización
+          </button>
+
+          <!-- Mensaje de éxito -->
+          <div id="form-exito" class="form-mensaje form-exito" role="alert" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>¡Solicitud enviada con éxito!</strong>
+              <p>Un asesor te contactará en menos de 2 horas hábiles. También puedes escribirnos por WhatsApp para atención inmediata.</p>
+            </div>
+          </div>
+
+          <!-- Mensaje de error -->
+          <div id="form-error" class="form-mensaje form-error" role="alert" hidden>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div>
+              <strong>Algo salió mal.</strong>
+              <p>Intenta de nuevo o escríbenos directamente a service@autotechindustrialsolutions.com</p>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Columna de marca -->
+        <div class="footer-brand">
+          <a href="#inicio" class="logo logo-footer">
+            AUTOTECH
+            <span class="logo-sub">México</span>
+          </a>
+          <p class="footer-tagline">Distribuidores de maquinaria CNC y PLCs industriales con presencia en toda la República Mexicana.</p>
+          <p class="footer-rfc">
+            <strong>RFC:</strong> AAA000101AAA <!-- Reemplaza con tu RFC real -->
+          </p>
+          <div class="social-links">
+            <!-- Reemplaza los href con tus perfiles reales -->
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Links rápidos -->
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#catalogo">Catálogo de equipos</a></li>
+            <li><a href="#por-que">¿Por qué nosotros?</a></li>
+            <li><a href="#marcas">Marcas</a></li>
+            <li><a href="#nosotros">Nuestra trayectoria</a></li>
+            <li><a href="#cotizacion">Solicitar cotización</a></li>
+          </ul>
+        </div>
+
+        <!-- Productos -->
+        <div class="footer-links">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="#catalogo">Máquinas CNC</a></li>
+            <li><a href="#catalogo">PLCs industriales</a></li>
+            <li><a href="#catalogo">Refacciones</a></li>
+            <li><a href="#catalogo">Accesorios</a></li>
+            <li><a href="#cotizacion">Equipo a pedido</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-contacto">
+          <h4>Contacto</h4>
+          <p><i class="fa-solid fa-phone"></i> +1 (956) 239-4080</p>
+          <p><i class="fa-brands fa-whatsapp"></i> +1 (956) 239-4080</p>
+          <p><i class="fa-solid fa-envelope"></i> service@autotechindustrialsolutions.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Industrial 4500, Parque Industrial<br>Monterrey, N.L. C.P. 64000</p>
+          <p><i class="fa-solid fa-clock"></i> Lun–Vie 8am–6pm · Sáb 9am–2pm</p>
+        </div>
+
+      </div>
+
+      <!-- Barra inferior -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="anio"></span> Autotech México. Todos los derechos reservados.</p>
+        <p class="footer-envio">
+          <i class="fa-solid fa-truck"></i> Enviamos a toda la República Mexicana
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Inventario de productos (generado por scraper.py) -->
+  <script src="inventario.js"></script>
+  <!-- JavaScript del sitio -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

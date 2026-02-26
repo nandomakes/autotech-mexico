@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Accesorios Industriales — Autotech México</title>
+  <meta name="description" content="Catálogo de accesorios industriales. HMIs, convertidores, cables y componentes complementarios para maquinaria CNC y PLCs. Envío a toda la República Mexicana.">
+  <meta name="keywords" content="accesorios industriales México, HMI industrial, convertidores, cables industriales">
+  <meta property="og:title" content="Accesorios Industriales — Autotech México">
+  <meta property="og:description" content="Catálogo de accesorios industriales con envío a toda la República Mexicana.">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS — Animaciones en scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-categoria="accesorios">
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+  ============================================================ -->
+  <a
+    href="https://wa.me/19562394080?text=Hola%2C%20me%20interesa%20cotizar%20un%20accesorio.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%3F"
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        AUTOTECH
+        <span class="logo-sub">México</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="index.html#por-que" class="nav-link">¿Por qué nosotros?</a></li>
+        <li><a href="index.html#marcas" class="nav-link">Marcas</a></li>
+        <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="index.html#cotizacion" class="btn btn-primary nav-cta">Solicitar Cotización</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CONTENIDO DE CATEGORÍA
+  ============================================================ -->
+  <main class="categoria-page">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Navegación" data-aos="fade-right">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="index.html#catalogo">Catálogo</a>
+        <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="breadcrumb-actual">Accesorios</span>
+      </nav>
+
+      <!-- Header de categoría -->
+      <header class="categoria-header" data-aos="fade-up">
+        <div class="categoria-header-icon acces">
+          <i class="fa-solid fa-plug"></i>
+        </div>
+        <div class="categoria-header-info">
+          <h1>Accesorios Industriales</h1>
+          <p>HMIs, pantallas táctiles, convertidores, variadores de frecuencia, cables y accesorios complementarios para tu maquinaria industrial.</p>
+        </div>
+      </header>
+
+      <!-- Barra de herramientas -->
+      <div class="catalogo-toolbar" data-aos="fade-up">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            id="catalogo-search"
+            placeholder="Buscar por nombre, SKU o marca…"
+            autocomplete="off"
+            spellcheck="false"
+          >
+        </div>
+
+        <div class="filtros-grupo">
+          <select id="filtro-marca" class="filtro-select">
+            <option value="">Todas las marcas</option>
+          </select>
+          <select id="filtro-condicion" class="filtro-select">
+            <option value="">Cualquier condición</option>
+            <option value="New">Nuevo</option>
+            <option value="Refurbished">Reacondicionado</option>
+          </select>
+        </div>
+
+        <span class="catalogo-count" id="catalogo-count">Cargando...</span>
+      </div>
+
+      <!-- Botón volver -->
+      <a href="index.html#catalogo" class="btn-volver">
+        <i class="fa-solid fa-arrow-left"></i> Volver al catálogo
+      </a>
+
+      <!-- Grid de productos -->
+      <div class="productos-grid" id="productos-grid">
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+        <div class="sk-card"></div>
+      </div>
+
+
+      <!-- Mensaje sin resultados -->
+      <p class="filtro-vacio" id="filtro-vacio" hidden>
+        No hay productos que coincidan con tu búsqueda. <a href="index.html#cotizacion">Solicita un equipo específico</a>.
+      </p>
+
+      <!-- Error de carga -->
+      <div class="inventario-error" id="inventario-error" hidden>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        No se pudo cargar el catálogo.
+        <button onclick="location.reload()">Reintentar</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            AUTOTECH
+            <span class="logo-sub">México</span>
+          </a>
+          <p class="footer-tagline">Distribuidores de maquinaria CNC y PLCs industriales con presencia en toda la República Mexicana.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="categoria-cnc.html">Máquinas CNC</a></li>
+            <li><a href="categoria-plc.html">PLCs y Control</a></li>
+            <li><a href="categoria-refacciones.html">Refacciones</a></li>
+            <li><a href="categoria-accesorios.html">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html#por-que">¿Por qué nosotros?</a></li>
+            <li><a href="index.html#marcas">Marcas</a></li>
+            <li><a href="index.html#nosotros">Nuestra trayectoria</a></li>
+            <li><a href="index.html#cotizacion">Solicitar cotización</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contacto">
+          <h4>Contacto</h4>
+          <p><i class="fa-solid fa-phone"></i> +52 (55) 0000-0000</p>
+          <p><i class="fa-brands fa-whatsapp"></i> +52 (55) 0000-0000</p>
+          <p><i class="fa-solid fa-envelope"></i> ventas@autotechmexico.mx</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="anio"></span> Autotech México. Todos los derechos reservados.</p>
+        <p class="footer-envio">
+          <i class="fa-solid fa-truck"></i> Enviamos a toda la República Mexicana
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Inventario -->
+  <script src="inventario.js"></script>
+  <!-- Lógica de categoría -->
+  <script src="js/categoria.js"></script>
+
+</body>
+</html>
